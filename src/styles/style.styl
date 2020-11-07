@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Orbitron&display=swap')
+
+body
+  /* Photo by Diego PH on Unsplash */
+  background-image url(https://images.unsplash.com/photo-1489549132488-d00b7eee80f1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=diego-ph-5LOhydOtTKU-unsplash.jpg&w=1920)
+  background-size cover
+  background-attachment fixed
+  background-position top center
+  margin 0
+  font-family var(--font-family-sans-serif), 'Noto Sans TC'
+
+#app
+  animation light 9s linear infinite
+  width 100vw
+  height 100vh
+  color #fff
+
+#time
+  font-family Orbitron
+
+#content
+  height 80vh
+
+#footer
+  height 20vh
+
+#todos table
+  table-layout fixed
+
+.cusrsor-pointer
+  cursor pointer
+
+@keyframes light
+  from
+    filter drop-shadow(0px 0px 10px #ff0)
+
+  33%
+    filter drop-shadow(0px 0px 10px #0ff)
+
+  66%
+    filter drop-shadow(0px 0px 10px #f0f)
+
+  to
+    filter drop-shadow(0px 0px 10px #ff0)
